@@ -1,8 +1,8 @@
 # Portable agent skills
 
-Requirements and installation tooling for expert skills shared across Codex, Google Antigravity, and Claude Code. The expertise will be supplied separately; this repository does not yet contain an expert skill.
+Requirements and installation tooling for expert skills shared across Codex, Google Antigravity, and Claude Code. The first skill will create inbounds and configure Xray DNS and routing for an existing 3X-UI environment. It will not install 3X-UI or Xray. This repository contains requirements only; implementation awaits the user's documentation, and the user will run connection tests.
 
-Read [REQUIREMENTS.md](REQUIREMENTS.md) for the compatibility and release requirements. Complete [EXPERTISE.md](EXPERTISE.md) with the subject and examples for the first skill.
+Read [REQUIREMENTS.md](REQUIREMENTS.md) for compatibility and release requirements and [EXPERTISE.md](EXPERTISE.md) for the agreed scope. Supply the technical documentation next so the expert skill can be authored.
 
 ## Install a skill
 

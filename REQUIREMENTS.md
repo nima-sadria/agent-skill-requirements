@@ -2,6 +2,10 @@
 
 Build one expert skill that supports the same user outcomes in Codex, Google Antigravity, and Claude Code. Keep the source in `skills/<skill-name>/` and copy the complete folder into each host's discovery directory. The requirements below are project requirements; they do not imply that the future skill has passed runtime checks.
 
+## Scope for the first skill
+
+The first skill will create inbounds and configure Xray DNS and routing in an existing 3X-UI environment. Follow [EXPERTISE.md](EXPERTISE.md) for its scope. Installation and upgrades are excluded. The user supplies the technical documentation and runs connection tests. Until those materials arrive, deliver requirements only and do not collect further domain documentation or implement the expert skill.
+
 ## Shared package format
 
 Follow the [Agent Skills specification](https://agentskills.io/specification):
@@ -35,11 +39,11 @@ Before marking an expert skill ready:
 
 1. Validate frontmatter, naming, resource links, and absence of unfinished placeholders.
 2. Install into a fresh project for each of the three target agents and verify discovery.
-3. Run realistic relevant requests, an out-of-scope request, and a missing-input or missing-tool case. Check outputs against the expertise criteria.
+3. Evaluate realistic relevant requests, an out-of-scope request, and a missing-input or missing-tool case. Check generated outputs against the expertise criteria. For the first skill, the user runs connection tests; agent evaluation must not initiate live connection tests.
 4. Run bundled scripts on their supported operating systems. Check installation preview, repeat installation, conflicting files, and paths containing spaces.
 5. Record actual agent versions, operating systems, results, and any untested combinations. Format compatibility alone is not runtime validation.
 6. Keep GitHub visibility private and exclude credentials, personal data, generated installations, and local environment files.
 
 ## Implementation sequence
 
-Complete the expertise brief, author the smallest useful skill, validate the package, verify behavior on the target hosts, then publish the validated skill in this private repository. Add adapters only when a concrete host difference requires one.
+Receive the user's technical documentation, finalize the expertise requirements, author the smallest useful skill, validate the package, and verify behavior on the target hosts. The user then performs connection tests. Publish with the actual validation status in this private repository. Add adapters only when a concrete host difference requires one.
