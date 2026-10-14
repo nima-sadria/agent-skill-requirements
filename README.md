@@ -2,7 +2,7 @@
 
 Requirements and installation tooling for expert skills shared across Codex, Google Antigravity, and Claude Code. The first skill will create inbounds and configure Xray DNS and routing for an existing 3X-UI environment. It will not install 3X-UI or Xray. This repository contains requirements only; implementation awaits the user's documentation, and the user will run connection tests.
 
-Read [REQUIREMENTS.md](REQUIREMENTS.md) for compatibility and release requirements and [EXPERTISE.md](EXPERTISE.md) for the agreed scope. Supply the technical documentation next so the expert skill can be authored.
+Read [REQUIREMENTS.md](REQUIREMENTS.md) for compatibility and release requirements and [EXPERTISE.md](EXPERTISE.md) for the agreed scope. The supplied parameter matrix and its extracted table are preserved under `docs/sources/`; see the [datasheet review](docs/DATASHEET-REVIEW.md) for coverage and details needing confirmation before authoring the expert skill.
 
 ## Install a skill
 

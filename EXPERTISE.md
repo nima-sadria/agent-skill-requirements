@@ -43,4 +43,4 @@ Preserve unrelated settings. Explain parameter dependencies, any assumptions, an
 
 ## Next input
 
-The user will supply the documentation. Exact protocol coverage, panel payload format, DNS behavior, and routing rules remain to be defined from those materials. This stage delivers requirements only.
+The user supplied the [parameter matrix](docs/sources/3x-ui-xray-parameters-matrix.pdf). The [source review](docs/DATASHEET-REVIEW.md) records its scope and details needing confirmation. Exact protocol coverage, panel payload format, DNS behavior, and routing rules still require the applicable versioned documentation, including the identities of the matrix's numbered sources. This stage delivers requirements only; receipt of this datasheet does not by itself initiate skill implementation.
