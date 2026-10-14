@@ -38,3 +38,7 @@ These are confirmation requirements, not a declaration that the supplied values 
 - Give the user reviewable output and testing guidance; the user performs live connection tests.
 
 The current deliverable remains requirements and source preparation. An expert skill has not been implemented or tested against a live server.
+
+## Follow-up after receiving the architecture brief
+
+The user subsequently supplied a Persian architecture brief and upstream links. The [source registry](SOURCES.md) records their identities and review status. The [detailed requirements](CONFIGURATION-REQUIREMENTS.md) now capture the Lua file-path behavior and internal API routing dependency from versioned official documentation. This supplements the matrix without changing its original cells or assigning its numbered citations by inference.

@@ -4,7 +4,7 @@ Build one expert skill that supports the same user outcomes in Codex, Google Ant
 
 ## Scope for the first skill
 
-The first skill will create inbounds and configure Xray DNS and routing in an existing 3X-UI environment. Follow [EXPERTISE.md](EXPERTISE.md) for its scope. Installation and upgrades are excluded. The user supplies the technical documentation and runs connection tests. Until those materials arrive, deliver requirements only and do not collect further domain documentation or implement the expert skill.
+The first skill will create inbounds and configure Xray DNS and routing in an existing 3X-UI environment. Follow [EXPERTISE.md](EXPERTISE.md) for its scope and the [detailed configuration requirements](docs/CONFIGURATION-REQUIREMENTS.md) for source-derived constraints. Installation and upgrades are excluded. The user supplies documentation and runs connection tests. The current deliverable remains requirements and review of the supplied materials; the expert skill has not been implemented.
 
 ## Shared package format
 

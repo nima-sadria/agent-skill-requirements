@@ -4,6 +4,8 @@ Requirements and installation tooling for expert skills shared across Codex, Goo
 
 Read [REQUIREMENTS.md](REQUIREMENTS.md) for compatibility and release requirements and [EXPERTISE.md](EXPERTISE.md) for the agreed scope. The supplied parameter matrix and its extracted table are preserved under `docs/sources/`; see the [datasheet review](docs/DATASHEET-REVIEW.md) for coverage and details needing confirmation before authoring the expert skill.
 
+The supplied Persian architecture brief is also preserved under `docs/sources/`. The [source registry](docs/SOURCES.md) records direct upstream links and versioned evidence; [detailed configuration requirements](docs/CONFIGURATION-REQUIREMENTS.md) cover inbound/client consistency, DNS, routing, Lua, and panel API output.
+
 ## Install a skill
 
 Prerequisites: Git to clone this private repository and Python 3.10 or newer to run the installer. Authenticate with a GitHub account that has repository access.
