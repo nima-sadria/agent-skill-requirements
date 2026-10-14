@@ -1,6 +1,6 @@
 # Expertise requirements for Xray configuration
 
-The future skill will create inbounds and configure Xray for an existing 3X-UI environment, including DNS and routing. Its goal is to produce configurations suitable for the user's connectivity needs under Iranian filtering and DPI conditions. The user will supply the technical documentation and perform connection tests.
+The [xray-inbound-expert skill](skills/xray-inbound-expert/SKILL.md) creates inbounds and configures Xray for an existing Ubuntu-hosted 3X-UI environment through the panel API, including DNS and routing. Its goal is to produce configurations suitable for the user's connectivity needs under Iranian filtering and DPI conditions. The user supplies infrastructure details and performs connection tests.
 
 ## Included tasks
 
@@ -9,6 +9,8 @@ The future skill will create inbounds and configure Xray for an existing 3X-UI e
 - Keep related server and client parameters consistent when client settings are needed to use the inbound.
 - Explain required inputs, resulting changes, and how the user can check the configuration.
 - Revise the configuration using test results supplied by the user.
+- Ask for each domain's Cloudflare orange-cloud or DNS-only state, client compatibility, and desired number of profiles versus users/listeners.
+- Apply authorized configuration changes through the existing panel API, snapshot affected state, and verify persisted settings and core process state.
 
 Protocol and transport coverage will be defined by the user's documentation. Do not assume a fixed protocol list from the voice transcript.
 
@@ -17,8 +19,7 @@ Protocol and transport coverage will be defined by the user's documentation. Do 
 - Installing, reinstalling, or upgrading 3X-UI or Xray.
 - Provisioning servers or changing operating system, firewall, SSH, or hosting settings.
 - Running connection tests on behalf of the user.
-- Collecting additional technical documentation at this stage.
-- Building the expert skill before the user supplies its documentation.
+- Changing Cloudflare records, provisioning web servers, or issuing certificates as an implicit side effect of creating an inbound.
 
 ## Required inputs for the future skill
 
@@ -43,4 +44,4 @@ Preserve unrelated settings. Explain parameter dependencies, any assumptions, an
 
 ## Next input
 
-The user supplied the [parameter matrix](docs/sources/3x-ui-xray-parameters-matrix.pdf), the [Persian architecture brief](docs/sources/3x-ui-v3.10.0-architecture-brief.fa.md), and web references. See the [source registry](docs/SOURCES.md) and [detailed configuration requirements](docs/CONFIGURATION-REQUIREMENTS.md). Versioned official material establishes several feature and schema constraints; exact target versions and output format will be collected for each future configuration request. The matrix's numbered sources remain unmapped. This stage delivers requirements only; the expert skill has not been authored.
+The user supplied the [parameter matrix](docs/sources/3x-ui-xray-parameters-matrix.pdf), the [Persian architecture brief](docs/sources/3x-ui-v3.10.0-architecture-brief.fa.md), and web references, then requested an Ubuntu/API configuration workflow. See the [source registry](docs/SOURCES.md), [detailed configuration requirements](docs/CONFIGURATION-REQUIREMENTS.md), and [validation status](docs/VALIDATION.md). The skill package and API helper are authored; installed versions, credentials, domain proxy states, and intended profile count are collected when the skill is used on the actual server. The matrix's numbered sources remain unmapped, so implementation relies on identified versioned primary sources instead.

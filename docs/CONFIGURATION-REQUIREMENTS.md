@@ -1,6 +1,6 @@
 # Detailed requirements for inbound and Xray configuration
 
-Create reviewable inbound, DNS, and routing configuration for an existing 3X-UI installation. This refines the [expertise scope](../EXPERTISE.md) using the [registered sources](SOURCES.md); it does not implement the skill.
+Create reviewable inbound, DNS, and routing configuration for an existing Ubuntu-hosted 3X-UI installation. These requirements define the [xray-inbound-expert skill](../skills/xray-inbound-expert/SKILL.md) using the [expertise scope](../EXPERTISE.md) and [registered sources](SOURCES.md).
 
 ## Inputs and output format
 
@@ -45,7 +45,9 @@ Use the applicable versioned API schema and verify payload normalization in the 
 
 Some inbound examples use broad object schemas and illustrative values. The presence of an endpoint and example does not validate every nested core field or prove the same payload works on another version. In particular, resolve example differences such as `dest` versus the upstream REALITY `target` before choosing a field.
 
-Generating a payload does not authorize executing it against a live panel. No live panel requests, reloads, connectivity tests, or configuration changes are part of the current requirements task.
+The skill can apply configuration through the API when the user's active request authorizes that work. Generating a draft alone does not authorize a live write. Snapshot affected state, prepare the concrete change, preserve the current `outboundTestUrl`, and read back results. A panel update can apply or restart the running core. End-to-end connectivity tests remain with the user.
+
+In the v3.10.0 baseline, the template inspection route is `POST /panel/api/xray/`; response objects may contain JSON-encoded wrappers. The inbound update route ignores body clients and enable state, so manage those through the documented client and enable endpoints when requested. These distinctions are encoded in the skill's [API workflow](../skills/xray-inbound-expert/references/api.md).
 
 ## Version dependent features and boundaries
 

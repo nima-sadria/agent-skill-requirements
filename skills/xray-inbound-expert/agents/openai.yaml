@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xray Inbound Expert"
+  short_description: "Configure 3X-UI inbounds, DNS, routing, and clients"
+  default_prompt: "Use $xray-inbound-expert to inspect my existing Ubuntu 3X-UI panel, ask for domain proxy states and profile count, then create compatible inbounds and DNS/routing through its API."

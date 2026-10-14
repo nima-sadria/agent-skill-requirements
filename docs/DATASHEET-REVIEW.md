@@ -37,7 +37,7 @@ These are confirmation requirements, not a declaration that the supplied values 
 - Do not use installation or provisioning entries to expand the task scope.
 - Give the user reviewable output and testing guidance; the user performs live connection tests.
 
-The current deliverable remains requirements and source preparation. An expert skill has not been implemented or tested against a live server.
+The source review informs the [implemented skill](../skills/xray-inbound-expert/SKILL.md). Live-server correctness and end-to-end connectivity remain unverified; see [validation status](VALIDATION.md).
 
 ## Follow-up after receiving the architecture brief
 

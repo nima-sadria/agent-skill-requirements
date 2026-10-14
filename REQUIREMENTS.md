@@ -4,7 +4,7 @@ Build one expert skill that supports the same user outcomes in Codex, Google Ant
 
 ## Scope for the first skill
 
-The first skill will create inbounds and configure Xray DNS and routing in an existing 3X-UI environment. Follow [EXPERTISE.md](EXPERTISE.md) for its scope and the [detailed configuration requirements](docs/CONFIGURATION-REQUIREMENTS.md) for source-derived constraints. Installation and upgrades are excluded. The user supplies documentation and runs connection tests. The current deliverable remains requirements and review of the supplied materials; the expert skill has not been implemented.
+The [xray-inbound-expert skill](skills/xray-inbound-expert/SKILL.md) creates inbounds and configures Xray DNS and routing in an existing Ubuntu-hosted 3X-UI environment through the panel API. Follow [EXPERTISE.md](EXPERTISE.md) for its scope and the [detailed configuration requirements](docs/CONFIGURATION-REQUIREMENTS.md) for source-derived constraints. Installation and upgrades are excluded. The user runs connection tests. See [validation status](docs/VALIDATION.md) for completed checks and unverified combinations.
 
 ## Shared package format
 

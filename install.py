@@ -15,7 +15,8 @@ AGENT_PATHS = {
 
 
 def files(folder):
-    return {p.relative_to(folder): p.read_bytes() for p in folder.rglob("*") if p.is_file()}
+    return {p.relative_to(folder): p.read_bytes() for p in folder.rglob("*")
+            if p.is_file() and "__pycache__" not in p.relative_to(folder).parts and p.suffix != ".pyc"}
 
 
 def main():
@@ -67,7 +68,7 @@ def main():
             print(f"Would install: {bundle.name} -> {target}")
         else:
             destination.mkdir(parents=True, exist_ok=True)
-            shutil.copytree(bundle, target)
+            shutil.copytree(bundle, target, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
             print(f"Installed: {target}")
     return 0
 
